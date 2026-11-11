@@ -1,0 +1,569 @@
+{
+ "Perl__perl5": {
+  "counts": {
+   "all_utf8": 6951,
+   "searched": 6952,
+   "all_non_utf8": 57,
+   "skipped_non_utf8": 57,
+   "skipped_non_utf8_source_ext": 40,
+   "all_nul": 30,
+   "skipped_nul": 25,
+   "skipped_utf8": 4
+  },
+  "examples": {
+   "non_utf8": [
+    "cpan/CPAN-Meta/corpus/BadMETA.yml",
+    "cpan/Pod-Simple/t/pulltitl.t",
+    "cpan/Pod-Simple/t/encod02.t",
+    "cpan/Pod-Simple/t/corpus2/fiqhakbar_iso6.txt"
+   ],
+   "nul": [
+    "cpan/IPC-Cmd/t/src/x.tgz",
+    "cpan/Archive-Tar/t/src/linktest/linktest_with_dir.tar",
+    "cpan/Archive-Tar/t/src/linktest/linktest_missing_dir.tar",
+    "cpan/Archive-Tar/t/src/short/foo.tbz"
+   ],
+   "utf8": [
+    "dist/Data-Dumper/Makefile.PL",
+    "vms/vms.c",
+    "vms/vmspipe.com",
+    "vms/vmsish.h"
+   ]
+  },
+  "exts": [
+   [
+    ".t",
+    18
+   ],
+   [
+    ".txt",
+    14
+   ],
+   [
+    ".enc",
+    8
+   ],
+   [
+    "(none)",
+    8
+   ],
+   [
+    ".pm",
+    4
+   ],
+   [
+    ".yml",
+    2
+   ]
+  ]
+ },
+ "curl__curl": {
+  "counts": {
+   "all_utf8": 4565,
+   "searched": 4564,
+   "skipped_utf8": 1
+  },
+  "examples": {
+   "utf8": [
+    "docs/INSTALL"
+   ]
+  },
+  "exts": []
+ },
+ "emacs-mirror__emacs": {
+  "counts": {
+   "all_utf8": 5117,
+   "skipped_utf8": 8,
+   "searched": 5110,
+   "all_non_utf8": 79,
+   "skipped_non_utf8": 78,
+   "skipped_non_utf8_source_ext": 11,
+   "non_utf8_but_searched": 1,
+   "all_nul": 421,
+   "skipped_nul": 421
+  },
+  "examples": {
+   "utf8": [
+    "ChangeLog.android",
+    "test/lisp/files-resources/dir-locals-2-solo/.dir-locals-2.el",
+    "test/lisp/files-resources/dir-locals-and-2/.dir-locals-2.el",
+    "test/lisp/net/dbus-resources/org.gnu.Emacs.TestDBus.xml"
+   ],
+   "non_utf8": [
+    "lisp/language/ethiopic.el",
+    "lisp/language/tibet-util.el",
+    "lisp/language/tibetan.el",
+    "lisp/language/ind-util.el"
+   ],
+   "nul": [
+    "nt/icons/gnu7.ico",
+    "nt/icons/emacs.ico",
+    "nt/icons/gnu2a32t.ico",
+    "nt/icons/gnu4g48.ico"
+   ]
+  },
+  "exts": [
+   [
+    ".pbm",
+    46
+   ],
+   [
+    ".tit",
+    13
+   ],
+   [
+    ".el",
+    7
+   ],
+   [
+    ".pdf",
+    3
+   ],
+   [
+    ".html",
+    2
+   ],
+   [
+    ".bin",
+    1
+   ]
+  ]
+ },
+ "git__git": {
+  "counts": {
+   "all_utf8": 4824,
+   "searched": 4825,
+   "all_nul": 19,
+   "skipped_nul": 19,
+   "all_non_utf8": 12,
+   "skipped_non_utf8": 11,
+   "skipped_non_utf8_source_ext": 10,
+   "non_utf8_but_searched": 1
+  },
+  "examples": {
+   "nul": [
+    "git-gui/lib/git-gui.ico",
+    "gitweb/static/git-logo.png",
+    "gitweb/static/git-favicon.png",
+    "t/test-binary-1.png"
+   ],
+   "non_utf8": [
+    "t/t7813-grep-icase-iso.sh",
+    "t/t4201-shortlog.sh",
+    "t/t8005/sjis.txt",
+    "t/t8005/euc-japan.txt"
+   ]
+  },
+  "exts": [
+   [
+    ".txt",
+    8
+   ],
+   [
+    ".sh",
+    2
+   ],
+   [
+    "(none)",
+    1
+   ]
+  ]
+ },
+ "nodejs__node": {
+  "counts": {
+   "all_utf8": 55830,
+   "searched": 55822,
+   "skipped_utf8": 19,
+   "all_nul": 871,
+   "skipped_nul": 865,
+   "all_non_utf8": 43,
+   "skipped_non_utf8": 38,
+   "non_utf8_but_searched": 5,
+   "skipped_non_utf8_source_ext": 34
+  },
+  "examples": {
+   "utf8": [
+    "tools/gyp/test/fixtures/expected-win32/msvs/integration.sln",
+    "tools/gyp/test/fixtures/expected-win32/msvs/test.vcproj",
+    "test/fixtures/empty-with-bom.txt",
+    "deps/v8/.github/mistaken-pull-closer.yml"
+   ],
+   "nul": [
+    "tools/dep_updaters/nghttp.kbx",
+    "tools/dep_updaters/c-ares.kbx",
+    "tools/dep_updaters/icu.kbx",
+    "test/fixtures/person-large.jpg"
+   ],
+   "non_utf8": [
+    "test/fixtures/wpt/resources/example.pdf",
+    "test/fixtures/wpt/encoding/eof-shift_jis.html",
+    "test/fixtures/wpt/encoding/legacy-mb-tchinese/big5/big5_chars-csbig5.html",
+    "test/fixtures/wpt/encoding/legacy-mb-tchinese/big5/big5_chars_extra.html"
+   ]
+  },
+  "exts": [
+   [
+    ".html",
+    32
+   ],
+   [
+    ".js",
+    2
+   ],
+   [
+    ".sha1",
+    2
+   ],
+   [
+    ".pdf",
+    1
+   ],
+   [
+    "(none)",
+    1
+   ]
+  ]
+ },
+ "openssl__openssl": {
+  "counts": {
+   "all_utf8": 5947,
+   "searched": 5948,
+   "all_nul": 140,
+   "skipped_nul": 140,
+   "all_non_utf8": 17,
+   "skipped_non_utf8": 16,
+   "non_utf8_but_searched": 1
+  },
+  "examples": {
+   "nul": [
+    "test/testrsa_withattrs.der",
+    "test/shibboleth.pfx",
+    "test/smcont.bin",
+    "test/cms-msg/missing-kdf.der"
+   ],
+   "non_utf8": [
+    "test/encap_secret.bin",
+    "test/decap_out.bin",
+    "test/encap_out.bin",
+    "test/d2i-tests/bad-int-padminus1.der"
+   ]
+  },
+  "exts": [
+   [
+    ".bin",
+    9
+   ],
+   [
+    ".der",
+    4
+   ],
+   [
+    ".dat",
+    2
+   ],
+   [
+    ".p12",
+    1
+   ]
+  ]
+ },
+ "php__php-src": {
+  "counts": {
+   "all_utf8": 27996,
+   "searched": 27996,
+   "all_nul": 612,
+   "skipped_nul": 608,
+   "all_non_utf8": 205,
+   "skipped_non_utf8": 203,
+   "skipped_utf8": 6,
+   "non_utf8_but_searched": 2,
+   "skipped_non_utf8_source_ext": 6
+  },
+  "examples": {
+   "nul": [
+    "pear/install-pear-nozlib.phar",
+    "Zend/tests/nullsafe_operator/013.phpt",
+    "Zend/tests/multibyte/multibyte_encoding_006.phpt",
+    "Zend/tests/multibyte/multibyte_encoding_003.phpt"
+   ],
+   "non_utf8": [
+    "Zend/tests/multibyte/multibyte_encoding_001.phpt",
+    "Zend/tests/multibyte/multibyte_encoding_005.phpt",
+    "Zend/tests/multibyte/multibyte_encoding_004.phpt",
+    "ext/calendar/tests/jdtojewish.phpt"
+   ],
+   "utf8": [
+    "ext/opcache/tests/bug78106_test1.php",
+    "ext/opcache/tests/bug78106_test2.php",
+    "ext/ffi/tests/bug78761_preload.php",
+    "ext/pdo_firebird/tests/payload_server.php"
+   ]
+  },
+  "exts": [
+   [
+    ".phpt",
+    169
+   ],
+   [
+    ".testfile",
+    17
+   ],
+   [
+    ".html",
+    4
+   ],
+   [
+    "(none)",
+    4
+   ],
+   [
+    ".gif",
+    2
+   ],
+   [
+    ".ini",
+    1
+   ]
+  ]
+ },
+ "postgres__postgres": {
+  "counts": {
+   "all_utf8": 7671,
+   "searched": 7670,
+   "all_nul": 4,
+   "skipped_nul": 4,
+   "all_non_utf8": 57,
+   "skipped_non_utf8": 57,
+   "skipped_non_utf8_source_ext": 22,
+   "skipped_utf8": 1
+  },
+  "examples": {
+   "nul": [
+    "src/test/ssl/ssl/client-der.key",
+    "src/test/ssl/ssl/client-encrypted-der.key",
+    "src/bin/pgevent/MSG00001.bin",
+    "src/port/win32.ico"
+   ],
+   "non_utf8": [
+    "src/test/locale/koi8-r/test-koi8-select.sql.in",
+    "src/test/locale/koi8-r/test-koi8.sql.in",
+    "src/test/locale/koi8-r/test-koi8-sort.in",
+    "src/test/locale/koi8-r/expected/test-koi8-text.sql.out"
+   ],
+   "utf8": [
+    "src/port/win32ver.rc"
+   ]
+  },
+  "exts": [
+   [
+    ".out",
+    34
+   ],
+   [
+    ".in",
+    13
+   ],
+   [
+    ".sql",
+    8
+   ],
+   [
+    ".po",
+    1
+   ],
+   [
+    ".euc_jp",
+    1
+   ]
+  ]
+ },
+ "python__cpython": {
+  "counts": {
+   "all_utf8": 5409,
+   "searched": 5410,
+   "all_nul": 149,
+   "skipped_nul": 148,
+   "all_non_utf8": 19,
+   "skipped_non_utf8": 19,
+   "skipped_non_utf8_source_ext": 17
+  },
+  "examples": {
+   "nul": [
+    "PC/icons/pythonw.icns",
+    "PC/icons/setup.ico",
+    "PC/icons/idlex150.png",
+    "PC/icons/pythonwx150.png"
+   ],
+   "non_utf8": [
+    "Lib/test/tokenizedata/badsyntax_pep3120.py",
+    "Lib/test/xmltestdata/test.xml",
+    "Lib/test/xmltestdata/test.xml.out",
+    "Lib/test/encoded_modules/module_koi8_r.py"
+   ]
+  },
+  "exts": [
+   [
+    ".txt",
+    12
+   ],
+   [
+    ".py",
+    3
+   ],
+   [
+    ".xml",
+    2
+   ],
+   [
+    ".out",
+    1
+   ],
+   [
+    ".pbm",
+    1
+   ]
+  ]
+ },
+ "ruby__ruby": {
+  "counts": {
+   "all_utf8": 11767,
+   "searched": 11763,
+   "skipped_utf8": 14,
+   "all_nul": 26,
+   "skipped_nul": 21,
+   "all_non_utf8": 31,
+   "skipped_non_utf8": 26,
+   "skipped_non_utf8_source_ext": 25,
+   "non_utf8_but_searched": 5
+  },
+  "examples": {
+   "utf8": [
+    "test/net/fixtures/Makefile",
+    "test/json/fixtures/minefield/n_structure_UTF8_BOM_no_data.json",
+    "ext/io/console/win32_vk.inc",
+    "prism/srcs.mk"
+   ],
+   "nul": [
+    "test/prism/fixtures/newline_terminated.txt",
+    "test/rubygems/specifications/foo-0.0.1-x86-mswin32.gemspec",
+    "test/rubygems/packages/ill-formatted-platform-1.0.0.10.gem",
+    "test/rubygems/packages/ascii_binder-0.1.10.1.gem"
+   ],
+   "non_utf8": [
+    "test/json/fixtures/minefield/i_string_overlong_sequence_6_bytes.json",
+    "test/json/fixtures/minefield/i_string_lone_utf8_continuation_byte.json",
+    "test/json/fixtures/minefield/n_number_invalid-utf-8-in-bigger-int.json",
+    "test/json/fixtures/minefield/n_number_invalid-utf-8-in-exponent.json"
+   ]
+  },
+  "exts": [
+   [
+    ".json",
+    18
+   ],
+   [
+    ".rb",
+    5
+   ],
+   [
+    ".txt",
+    2
+   ],
+   [
+    ".markdown",
+    1
+   ]
+  ]
+ },
+ "torvalds__linux": {
+  "counts": {
+   "all_utf8": 97195,
+   "searched": 97193,
+   "skipped_utf8": 2,
+   "all_nul": 5,
+   "skipped_nul": 5,
+   "all_non_utf8": 2,
+   "skipped_non_utf8": 2
+  },
+  "examples": {
+   "utf8": [
+    "Documentation/.renames.txt",
+    "tools/perf/include/perf/perf_dlfilter.h"
+   ],
+   "nul": [
+    "Documentation/images/logo.gif",
+    "tools/testing/selftests/tc-testing/action-ebpf",
+    "tools/testing/selftests/bpf/default.profraw",
+    "tools/perf/tests/pe-file.exe"
+   ],
+   "non_utf8": [
+    "drivers/tty/vt/defkeymap.map",
+    "arch/m68k/hp300/hp300map.map"
+   ]
+  },
+  "exts": [
+   [
+    ".map",
+    2
+   ]
+  ]
+ },
+ "vim__vim": {
+  "counts": {
+   "all_utf8": 8412,
+   "searched": 8408,
+   "all_nul": 116,
+   "skipped_nul": 115,
+   "all_non_utf8": 173,
+   "skipped_non_utf8": 173,
+   "skipped_non_utf8_source_ext": 119,
+   "skipped_utf8": 5
+  },
+  "examples": {
+   "nul": [
+    "runtime/vim16x16.png",
+    "runtime/vim48x48.gif",
+    "runtime/icons.info",
+    "runtime/vimlogo.cdr"
+   ],
+   "non_utf8": [
+    "runtime/tools/vimspell.sh",
+    "runtime/spell/sl/sl_SI.diff",
+    "runtime/spell/sk/sk_SK.diff",
+    "runtime/spell/sw/sw_KE.diff"
+   ],
+   "utf8": [
+    "src/auto/wayland/Makefile",
+    "src/auto/wayland/README.txt",
+    "src/auto/wayland/protocols/wlr-data-control-unstable-v1.xml",
+    "src/auto/wayland/protocols/ext-data-control-v1.xml"
+   ]
+  },
+  "exts": [
+   [
+    ".vim",
+    60
+   ],
+   [
+    ".diff",
+    43
+   ],
+   [
+    ".1",
+    33
+   ],
+   [
+    ".po",
+    21
+   ],
+   [
+    "(none)",
+    4
+   ],
+   [
+    ".txt",
+    3
+   ]
+  ]
+ }
+}
