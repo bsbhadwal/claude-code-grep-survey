@@ -16,16 +16,21 @@ quotes, one invalid byte 200 KB from the match, a NUL byte, a gitignored directo
 only silent miss is UTF-16.
 
 **Twelve source trees** (`fetch_repos.py`, then `survey.py`; default branches on 2026-11-11): searching from each root
-with the shim's flags skips 680 of 242,379 text files for invalid UTF-8 (284 with source-like extensions) and 60
-tracked files because of ignore rules. Per-repository counts and examples: `survey-results-2026-11-11.json`.
+with the shim's flags skips 680 of 242,379 text files for invalid UTF-8 (284 with source-like extensions) and 58
+tracked files because of ignore rules. Every skipped file was re-checked against a listing with the recovering flag
+added (`verify_paths.py`, `verify_a.py`). Per-repository counts and examples: `survey-results-2026-11-11.json`.
 
 **Nested negation** (`min_repro.zsh`, `linux_case2.zsh`): with `perf` then `!include/perf/` in a nested `.gitignore`,
 ugrep `--ignore-files` drops the re-included directory when the search starts above it. git agrees the file is not
 ignored. In the Linux kernel this hides `tools/perf/include/perf/perf_dlfilter.h` from a root search while three
 other files are returned with exit 0. Reproduces in upstream ugrep 7.8.5.
 
-**Workarounds** (tested): `grep -U` recovers every encoding miss; adding `--no-ignore-files` recovers the rest except
-the file with a NUL byte.
+**Workarounds** (tested): `grep -a` recovers all 680 encoding skips (`-U` recovers 679; a Shift-JIS file ending in a
+truncated multibyte character stays hidden). `grep -a --no-ignore-files` finds all 9 corpus matches.
+
+**Correction (2026-11-11):** the first version said 60 ignore-rule skips and recommended `-U`. Two of the 60 were
+BOM-only files that an empty pattern cannot match. `survey-results-2026-11-11.json` is the raw first-pass output and
+still counts them.
 
 ## Run it
 
